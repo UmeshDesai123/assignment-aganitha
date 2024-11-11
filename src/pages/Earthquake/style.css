@@ -1,0 +1,72 @@
+.earth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f8fa;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+/* Header */
+h1 {
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Map Container */
+.leaflet-container {
+  width: 90vw;
+  max-width: 1200px;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid blueviolet;
+}
+
+.leaflet-container:hover {
+  transform: scale(1.01);
+}
+
+/* Popup Styling */
+.leaflet-popup-content {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #444;
+}
+
+.leaflet-popup-content strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Circle Markers */
+.leaflet-interactive {
+  stroke: none; /* Remove circle border */
+}
+
+/* Colors for Circle Markers Based on Magnitude */
+.leaflet-marker-icon, .leaflet-marker-shadow {
+  filter: brightness(0.9); /* Slightly dim */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+footer a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
